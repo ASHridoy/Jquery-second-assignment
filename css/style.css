@@ -1,0 +1,93 @@
+#first-section{
+
+	margin: 50px 0;
+}
+
+#datepic{
+
+	padding: 6px;
+	background: #eee;
+	border:1px solid #eee;
+}
+
+.date{
+
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+	color: #235689;
+}
+
+h3{
+
+	text-transform: uppercase;
+}
+
+.p,.pt,.arew{
+
+	display: inline-block;
+	color: #fff;
+}
+
+#paste,#bast{
+
+	border:1px solid #eee;
+	padding: 6px;
+	width: 521px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+}
+
+#click-to-area{
+
+	margin-bottom: 3px;
+}
+
+#Txt-paste{
+
+	border:1px solid #eee;
+	padding: 6px;
+	border-radius: 4px;
+}
+
+#second-section{
+
+	padding: 50px 0;
+	background: #235689;
+}
+
+.btn{
+
+	margin-bottom: 7px;
+	padding: 6px 15px;
+}
+
+
+
+span{
+
+	margin-left: 5px;
+}
+
+@media(max-width: 499px){
+
+	#datepic{
+
+		margin-bottom:250px;
+	}
+
+	#paste,#bast{
+
+	max-width: 98%;
+	}
+
+	#Txt-paste{
+
+		max-width: 98%;
+	}
+
+}
+
+
+
+

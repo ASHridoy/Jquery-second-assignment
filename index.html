@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery second assignment</title>
+			<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine"> 
+			<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<style>
+				
+			</style>
+	</head>
+	<body>
+
+		 <section id="first-section">
+		 	<div class="container">
+		 		<div class="row">
+		 			<div class="col-sm-6 col-xsm-6">
+		 				<span class="date">Datepicker:<input type="text" name="calender" id="datepic"></span>
+		 			</div>
+
+		 			<div class="col-sm-6 col-xsm-6" id="accordion">
+		 				<h3>section-1</h3>
+		 				<div>
+		 					<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sitamet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo u odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+		 				</div>
+		 				<h3>section-2</h3>
+		 				<div>
+		 					<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sitamet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo u odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+		 				</div>
+		 				<h3>section-3</h3>
+		 				<div>
+		 					<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sitamet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo u odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+		 				</div>
+		 			</div>
+		 		</div>
+		 	</div>
+		 </section>
+
+
+		 <section id="second-section">
+		 	<div class="container">
+		 				
+		 		<div class="row">
+		 			<div class="col-sm-4">
+		 				<p><b>Name :</b><span class="p">  Md. Abul Hasan(imon)</span> </p><br/>
+		 				<p><b>Email :</b><span class="pt">  imon@gmail.com</span></p>
+		 				<p><b>Text :</b><span class="arew">  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sitamet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo u odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. Vestibulum a velit eu ante scelerisque vulputate. Vestibulum a velit eu ante scelerisque vulputate.</span> </p>
+		 			</div>
+		 			<div class="col-sm-2">
+		 				<button class="btn btn-danger" id="click-to-paste"> Paste Name</button>
+		 				<button class="btn btn-danger" id="click-to-pte"> Paste Email</button>
+		 				<button class="btn btn-danger" id="click-to-area"> Paste Text</button>
+		 			</div>
+		 			<div class="col-sm-6">
+		 				<input type="text" name="imon" id="paste">
+		 				<input type="text" name="imon" id="bast">
+		 				<textarea rows="7" cols="70" id="Txt-paste"></textarea>
+		 				<button class="btn btn-danger" id="back">Back</button>
+		 			</div>
+		 		</div>
+		 	</div>
+		 </section>
+
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+
+		<script>
+			
+			$(function(){
+			    
+			    $("#datepic").datepicker();
+
+			  });
+
+	//******  		accordion   ******
+
+			$(function(){
+
+				$("#accordion").accordion();
+			})
+
+
+	//******  		copy past   ******		
+
+		$(function(){
+
+			$("#click-to-paste").click(function(){
+
+				 	var copy=$(".p").text();
+
+				 	$("#paste").val(copy).css({"color":"#006699","background":"#eee"})
+
+				 })
+		})
+
+
+
+		$(function(){
+
+			$("#click-to-pte").click(function(){
+
+				 	var cpy=$(".pt").text();
+
+				 	$("#bast").val(cpy).css({"color":"#006699","background":"#eee"})
+
+				 })
+		})
+
+
+
+		$(function(){
+
+			$("#click-to-area").click(function(){
+
+				 	var are=$(".arew").text();
+
+				 	$("#Txt-paste").val(are).css({"color":"#006699","background":"#eee"})
+
+				 })
+		})
+
+
+		$(function(){
+		 $("#back").click(function(){
+	
+		 	var clear=$("").text();
+	
+		 	$("#paste").val(clear).css({"color":"#006699","background":"#eee"})
+			
+			var clear=$("").text();
+	
+		 	$("#bast").val(clear).css({"color":"#006699","background":"#eee"})
+			
+			var clear=$("").text();
+	
+		 	$("#Txt-paste").val(clear).css({"color":"#006699","background":"#eee"})
+		 		
+		 })
+	})
+		</script>
+	</body>
+</html>
